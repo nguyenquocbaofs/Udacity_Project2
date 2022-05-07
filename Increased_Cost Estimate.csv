@@ -1,0 +1,25 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),web server,Amazon EC2,0,509.89,6118.68,USD,"Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (t3.large)"
+My Estimate,US East (Ohio),application server,Amazon EC2,0,520.4,6244.8,USD,"Operating system (Linux), Quantity (8), Pricing strategy (On-Demand Instances), Storage amount (30 GB), Instance type (c5.large)"
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,4299.08,51588.96,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (100 GB per month), Nodes (2), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (OnDemand), Additional backup storage (1000 GB)"
+My Estimate,US East (Ohio),,Amazon Route 53,0,1850.5,22206,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (20), Additional Records in Hosted Zones ()"
+My Estimate,US East (Ohio),,S3 Standard,0,92,1104,USD,S3 Standard storage (4000 GB per month)
+My Estimate,US East (Ohio),,Data Transfer,0,92.16,1105.92,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (1 TB per month)"
+My Estimate,US East (Ohio),,VPN Connection,0,494,5928,USD,"Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations (2)"
+My Estimate,US East (Ohio),,Network Address Translation (NAT) Gateway,0,155.7,1868.4,USD,Number of NAT Gateways (2)
+My Estimate,US East (Ohio),,Application Load Balancer,0,1038.43,12461.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),,Network Load Balancer,0,1768.43,21221.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (200 GB per hour), Processed bytes per NLB for TLS (200 GB per hour), Average TLS connection duration (30 seconds), Average number of new TLS connections (10 per second)"
+My Estimate,US East (Ohio),,Amazon CloudWatch,0,2101.711,25220.53,USD,"Number of Metrics (includes detailed and custom metrics) (1000), GetMetricData: Number of metrics requested (1000), Number of other API requests (), Standard Logs: Data Ingested (1000 GB), Expected Logs Data scanned (1000 GB), Number of Custom/Cross-account events (1000), Number of Contributor Insights rules for DynamoDB (1000), Number of Lambda functions (1000), Number of Dashboards (100), Number of Canary runs (1000), Number of Contributor Insights rules for CloudWatch (1000)"
+My Estimate,US East (Ohio),,AWS Web Application Firewall (WAF),0,1350,16200,USD,"Number of Web Access Control Lists (Web ACLs) utilized (10 per month), Number of Rules added per Web ACL (10 per month), Number of Rule Groups per Web ACL (10 per month), Number of Rules inside each Rule Group (10 per month), Number of Managed Rule Groups per Web ACL (10 per month)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+EC2 configure uses 'On-Demand instances',,,,,,,,
+Route 53: Change 'Number of Elastic Network Interfaces' to 20,,,,,,,,
+Elastic Load Balancing: Increase value of processed bytes,,,,,,,,
+Add AWS Web Application Firewall (WAF),,,,,,,,
+Increase S3 storage size,,,,,,,,
+Upgrade RDS,,,,,,,,

@@ -1,0 +1,23 @@
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Configuration summary
+My Estimate,US East (Ohio),web server,Amazon EC2,0,328.85,3946.2,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (t3.large)"
+My Estimate,US East (Ohio),application server,Amazon EC2,0,339.36,4072.32,USD,"Operating system (Linux), Quantity (8), Pricing strategy (EC2 Instance Savings Plans 1 Year No Upfront), Storage amount (30 GB), Instance type (c5.large)"
+My Estimate,US East (Ohio),,Amazon RDS for PostgreSQL,0,1354.593,16255.12,USD,"Storage volume (General Purpose SSD (gp2)), Storage amount (100 GB per month), Nodes (1), Instance Type (db.m5.4xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Deployment Option (Multi-AZ), Pricing Model (Reserved), Lease Offering Term (1yr), Purchase Option (No Upfront)"
+My Estimate,US East (Ohio),,Amazon Route 53,0,938,11256,USD,"Hosted Zones (1), Basic Checks Within AWS (100), Number of Elastic Network Interfaces (10), Additional Records in Hosted Zones ()"
+My Estimate,US East (Ohio),,S3 Standard,0,46,552,USD,S3 Standard storage (2000 GB per month)
+My Estimate,US East (Ohio),,Data Transfer,0,92.16,1105.92,USD,"DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (1 TB per month)"
+My Estimate,US East (Ohio),,VPN Connection,0,421,5052,USD,"Working days per month (22), Number of Site-to-Site VPN Connections (2), Number of subnet associations (1)"
+My Estimate,US East (Ohio),,Network Address Translation (NAT) Gateway,0,37.35,448.2,USD,Number of NAT Gateways (1)
+My Estimate,US East (Ohio),,Application Load Balancer,0,1038.43,12461.16,USD,Number of Application Load Balancers (1)
+My Estimate,US East (Ohio),,Network Load Balancer,0,673.43,8081.16,USD,"Number of Network Load Balancers (1), Processed bytes per NLB for TCP (100 GB per hour), Processed bytes per NLB for TLS (50 GB per hour), Average TLS connection duration (30 seconds), Average number of new TLS connections (10 per second)"
+My Estimate,US East (Ohio),,Amazon CloudWatch,0,202.0711,2424.85,USD,"Number of Metrics (includes detailed and custom metrics) (100), GetMetricData: Number of metrics requested (100), Number of other API requests (), Standard Logs: Data Ingested (100 GB), Expected Logs Data scanned (100 GB), Number of Custom/Cross-account events (100), Number of Contributor Insights rules for DynamoDB (100), Number of Lambda functions (100), Number of Dashboards (10), Number of Canary runs (100), Number of Contributor Insights rules for CloudWatch (100)"
+,,,,,,,,
+,,,,,,,,
+,,,,,,,,
+Acknowledgement,,,,,,,,
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services.",,,,,,,,
+,,,,,,,,
+Changes:,,,,,,,,
+EC2 configure change from 'On-Demand instances' to 'EC2 Instance Savings Plans - 1 Year - No Upfront',,,,,,,,
+Route 53: Reduce 'Number of Elastic Network Interfaces' from 20 to 10,,,,,,,,
+Elastic Load Balancing: Reduce value of processed bytes,,,,,,,,
+RDS: Change Pricing model to 'Reversed - 1 yr - No Upfront',,,,,,,,
